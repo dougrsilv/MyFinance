@@ -1,0 +1,757 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAC303D329A7E51300745B72 /* NewRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC303D229A7E51300745B72 /* NewRecipeView.swift */; };
+		DAC303D629A7EB0400745B72 /* NewExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC303D529A7EB0400745B72 /* NewExpenseViewController.swift */; };
+		DAC303D829A7EE9F00745B72 /* NewExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC303D729A7EE9F00745B72 /* NewExpenseView.swift */; };
+		DAC303DB29A7F59800745B72 /* ExtensionsUIText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC303DA29A7F59800745B72 /* ExtensionsUIText.swift */; };
+		DACCEAB329A6FBFC0092F1AB /* NewRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACCEAB229A6FBFC0092F1AB /* NewRecipeViewController.swift */; };
+		DAD5105629A65DDF0094D7FE /* InitialFinanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD5105529A65DDF0094D7FE /* InitialFinanceCell.swift */; };
+		DAF44CA829A43D6200A6F6F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF44CA729A43D6200A6F6F8 /* AppDelegate.swift */; };
+		DAF44CAA29A43D6200A6F6F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF44CA929A43D6200A6F6F8 /* SceneDelegate.swift */; };
+		DAF44CAC29A43D6200A6F6F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF44CAB29A43D6200A6F6F8 /* ViewController.swift */; };
+		DAF44CAF29A43D6200A6F6F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF44CAD29A43D6200A6F6F8 /* Main.storyboard */; };
+		DAF44CB129A43D6400A6F6F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAF44CB029A43D6400A6F6F8 /* Assets.xcassets */; };
+		DAF44CB429A43D6400A6F6F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF44CB229A43D6400A6F6F8 /* LaunchScreen.storyboard */; };
+		DAF44CBF29A43D6400A6F6F8 /* MyFinancesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF44CBE29A43D6400A6F6F8 /* MyFinancesTests.swift */; };
+		DAF44CC929A43D6400A6F6F8 /* MyFinancesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF44CC829A43D6400A6F6F8 /* MyFinancesUITests.swift */; };
+		DAF44CCB29A43D6400A6F6F8 /* MyFinancesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF44CCA29A43D6400A6F6F8 /* MyFinancesUITestsLaunchTests.swift */; };
+		DAF44CD929A43E2E00A6F6F8 /* InitialFinanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF44CD829A43E2E00A6F6F8 /* InitialFinanceViewController.swift */; };
+		DAF44CDC29A43EA100A6F6F8 /* InitialFinanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF44CDB29A43EA100A6F6F8 /* InitialFinanceView.swift */; };
+		DAF44CF029A4661900A6F6F8 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAF44CDE29A4661900A6F6F8 /* Roboto-Black.ttf */; };
+		DAF44CF129A4661900A6F6F8 /* RobotoCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAF44CDF29A4661900A6F6F8 /* RobotoCondensed-Bold.ttf */; };
+		DAF44CF229A4661900A6F6F8 /* RobotoCondensed-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAF44CE029A4661900A6F6F8 /* RobotoCondensed-BoldItalic.ttf */; };
+		DAF44CF329A4661900A6F6F8 /* RobotoCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAF44CE129A4661900A6F6F8 /* RobotoCondensed-LightItalic.ttf */; };
+		DAF44CF429A4661900A6F6F8 /* RobotoCondensed-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAF44CE229A4661900A6F6F8 /* RobotoCondensed-Italic.ttf */; };
+		DAF44CF529A4661900A6F6F8 /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAF44CE329A4661900A6F6F8 /* RobotoCondensed-Light.ttf */; };
+		DAF44CF629A4661900A6F6F8 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAF44CE429A4661900A6F6F8 /* Roboto-ThinItalic.ttf */; };
+		DAF44CF729A4661900A6F6F8 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAF44CE529A4661900A6F6F8 /* Roboto-BlackItalic.ttf */; };
+		DAF44CF829A4661900A6F6F8 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAF44CE629A4661900A6F6F8 /* Roboto-Thin.ttf */; };
+		DAF44CF929A4661900A6F6F8 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAF44CE729A4661900A6F6F8 /* Roboto-Bold.ttf */; };
+		DAF44CFA29A4661900A6F6F8 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAF44CE829A4661900A6F6F8 /* Roboto-Light.ttf */; };
+		DAF44CFB29A4661900A6F6F8 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAF44CE929A4661900A6F6F8 /* Roboto-Italic.ttf */; };
+		DAF44CFC29A4661900A6F6F8 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAF44CEA29A4661900A6F6F8 /* Roboto-Medium.ttf */; };
+		DAF44CFD29A4661900A6F6F8 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAF44CEB29A4661900A6F6F8 /* Roboto-BoldItalic.ttf */; };
+		DAF44CFE29A4661900A6F6F8 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAF44CEC29A4661900A6F6F8 /* Roboto-MediumItalic.ttf */; };
+		DAF44CFF29A4661900A6F6F8 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAF44CED29A4661900A6F6F8 /* Roboto-LightItalic.ttf */; };
+		DAF44D0029A4661900A6F6F8 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAF44CEE29A4661900A6F6F8 /* Roboto-Regular.ttf */; };
+		DAF44D0129A4661900A6F6F8 /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAF44CEF29A4661900A6F6F8 /* RobotoCondensed-Regular.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAF44CBB29A43D6400A6F6F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAF44C9C29A43D6200A6F6F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAF44CA329A43D6200A6F6F8;
+			remoteInfo = MyFinances;
+		};
+		DAF44CC529A43D6400A6F6F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAF44C9C29A43D6200A6F6F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAF44CA329A43D6200A6F6F8;
+			remoteInfo = MyFinances;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DAC303D229A7E51300745B72 /* NewRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipeView.swift; sourceTree = "<group>"; };
+		DAC303D529A7EB0400745B72 /* NewExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExpenseViewController.swift; sourceTree = "<group>"; };
+		DAC303D729A7EE9F00745B72 /* NewExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExpenseView.swift; sourceTree = "<group>"; };
+		DAC303DA29A7F59800745B72 /* ExtensionsUIText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsUIText.swift; sourceTree = "<group>"; };
+		DACCEAB229A6FBFC0092F1AB /* NewRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipeViewController.swift; sourceTree = "<group>"; };
+		DAD5105529A65DDF0094D7FE /* InitialFinanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialFinanceCell.swift; sourceTree = "<group>"; };
+		DAF44CA429A43D6200A6F6F8 /* MyFinances.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFinances.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAF44CA729A43D6200A6F6F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DAF44CA929A43D6200A6F6F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DAF44CAB29A43D6200A6F6F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DAF44CAE29A43D6200A6F6F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAF44CB029A43D6400A6F6F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAF44CB329A43D6400A6F6F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAF44CB529A43D6400A6F6F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAF44CBA29A43D6400A6F6F8 /* MyFinancesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFinancesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAF44CBE29A43D6400A6F6F8 /* MyFinancesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFinancesTests.swift; sourceTree = "<group>"; };
+		DAF44CC429A43D6400A6F6F8 /* MyFinancesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFinancesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAF44CC829A43D6400A6F6F8 /* MyFinancesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFinancesUITests.swift; sourceTree = "<group>"; };
+		DAF44CCA29A43D6400A6F6F8 /* MyFinancesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFinancesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DAF44CD829A43E2E00A6F6F8 /* InitialFinanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialFinanceViewController.swift; sourceTree = "<group>"; };
+		DAF44CDB29A43EA100A6F6F8 /* InitialFinanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialFinanceView.swift; sourceTree = "<group>"; };
+		DAF44CDE29A4661900A6F6F8 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		DAF44CDF29A4661900A6F6F8 /* RobotoCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		DAF44CE029A4661900A6F6F8 /* RobotoCondensed-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-BoldItalic.ttf"; sourceTree = "<group>"; };
+		DAF44CE129A4661900A6F6F8 /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
+		DAF44CE229A4661900A6F6F8 /* RobotoCondensed-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Italic.ttf"; sourceTree = "<group>"; };
+		DAF44CE329A4661900A6F6F8 /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
+		DAF44CE429A4661900A6F6F8 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		DAF44CE529A4661900A6F6F8 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		DAF44CE629A4661900A6F6F8 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		DAF44CE729A4661900A6F6F8 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		DAF44CE829A4661900A6F6F8 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		DAF44CE929A4661900A6F6F8 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		DAF44CEA29A4661900A6F6F8 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		DAF44CEB29A4661900A6F6F8 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		DAF44CEC29A4661900A6F6F8 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		DAF44CED29A4661900A6F6F8 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		DAF44CEE29A4661900A6F6F8 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		DAF44CEF29A4661900A6F6F8 /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAF44CA129A43D6200A6F6F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF44CB729A43D6400A6F6F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF44CC129A43D6400A6F6F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAC303D429A7EAB300745B72 /* NewExpense */ = {
+			isa = PBXGroup;
+			children = (
+				DAC303D529A7EB0400745B72 /* NewExpenseViewController.swift */,
+				DAC303D729A7EE9F00745B72 /* NewExpenseView.swift */,
+			);
+			path = NewExpense;
+			sourceTree = "<group>";
+		};
+		DAC303D929A7F56200745B72 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DAC303DA29A7F59800745B72 /* ExtensionsUIText.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DACCEAB129A6FBAF0092F1AB /* NewRecipe */ = {
+			isa = PBXGroup;
+			children = (
+				DACCEAB229A6FBFC0092F1AB /* NewRecipeViewController.swift */,
+				DAC303D229A7E51300745B72 /* NewRecipeView.swift */,
+			);
+			path = NewRecipe;
+			sourceTree = "<group>";
+		};
+		DAF44C9B29A43D6200A6F6F8 = {
+			isa = PBXGroup;
+			children = (
+				DAF44CA629A43D6200A6F6F8 /* MyFinances */,
+				DAF44CBD29A43D6400A6F6F8 /* MyFinancesTests */,
+				DAF44CC729A43D6400A6F6F8 /* MyFinancesUITests */,
+				DAF44CA529A43D6200A6F6F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAF44CA529A43D6200A6F6F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAF44CA429A43D6200A6F6F8 /* MyFinances.app */,
+				DAF44CBA29A43D6400A6F6F8 /* MyFinancesTests.xctest */,
+				DAF44CC429A43D6400A6F6F8 /* MyFinancesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAF44CA629A43D6200A6F6F8 /* MyFinances */ = {
+			isa = PBXGroup;
+			children = (
+				DAC303D929A7F56200745B72 /* Extensions */,
+				DAF44CDD29A465BF00A6F6F8 /* Fontes */,
+				DAF44CD729A43D8F00A6F6F8 /* Feature */,
+				DAF44CA729A43D6200A6F6F8 /* AppDelegate.swift */,
+				DAF44CA929A43D6200A6F6F8 /* SceneDelegate.swift */,
+				DAF44CAB29A43D6200A6F6F8 /* ViewController.swift */,
+				DAF44CAD29A43D6200A6F6F8 /* Main.storyboard */,
+				DAF44CB029A43D6400A6F6F8 /* Assets.xcassets */,
+				DAF44CB229A43D6400A6F6F8 /* LaunchScreen.storyboard */,
+				DAF44CB529A43D6400A6F6F8 /* Info.plist */,
+			);
+			path = MyFinances;
+			sourceTree = "<group>";
+		};
+		DAF44CBD29A43D6400A6F6F8 /* MyFinancesTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAF44CBE29A43D6400A6F6F8 /* MyFinancesTests.swift */,
+			);
+			path = MyFinancesTests;
+			sourceTree = "<group>";
+		};
+		DAF44CC729A43D6400A6F6F8 /* MyFinancesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DAF44CC829A43D6400A6F6F8 /* MyFinancesUITests.swift */,
+				DAF44CCA29A43D6400A6F6F8 /* MyFinancesUITestsLaunchTests.swift */,
+			);
+			path = MyFinancesUITests;
+			sourceTree = "<group>";
+		};
+		DAF44CD729A43D8F00A6F6F8 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				DAF44CDA29A43E5900A6F6F8 /* InititalFinance */,
+				DACCEAB129A6FBAF0092F1AB /* NewRecipe */,
+				DAC303D429A7EAB300745B72 /* NewExpense */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		DAF44CDA29A43E5900A6F6F8 /* InititalFinance */ = {
+			isa = PBXGroup;
+			children = (
+				DAF44CD829A43E2E00A6F6F8 /* InitialFinanceViewController.swift */,
+				DAF44CDB29A43EA100A6F6F8 /* InitialFinanceView.swift */,
+				DAD5105529A65DDF0094D7FE /* InitialFinanceCell.swift */,
+			);
+			path = InititalFinance;
+			sourceTree = "<group>";
+		};
+		DAF44CDD29A465BF00A6F6F8 /* Fontes */ = {
+			isa = PBXGroup;
+			children = (
+				DAF44CDE29A4661900A6F6F8 /* Roboto-Black.ttf */,
+				DAF44CE529A4661900A6F6F8 /* Roboto-BlackItalic.ttf */,
+				DAF44CE729A4661900A6F6F8 /* Roboto-Bold.ttf */,
+				DAF44CEB29A4661900A6F6F8 /* Roboto-BoldItalic.ttf */,
+				DAF44CE929A4661900A6F6F8 /* Roboto-Italic.ttf */,
+				DAF44CE829A4661900A6F6F8 /* Roboto-Light.ttf */,
+				DAF44CED29A4661900A6F6F8 /* Roboto-LightItalic.ttf */,
+				DAF44CEA29A4661900A6F6F8 /* Roboto-Medium.ttf */,
+				DAF44CEC29A4661900A6F6F8 /* Roboto-MediumItalic.ttf */,
+				DAF44CEE29A4661900A6F6F8 /* Roboto-Regular.ttf */,
+				DAF44CE629A4661900A6F6F8 /* Roboto-Thin.ttf */,
+				DAF44CE429A4661900A6F6F8 /* Roboto-ThinItalic.ttf */,
+				DAF44CDF29A4661900A6F6F8 /* RobotoCondensed-Bold.ttf */,
+				DAF44CE029A4661900A6F6F8 /* RobotoCondensed-BoldItalic.ttf */,
+				DAF44CE229A4661900A6F6F8 /* RobotoCondensed-Italic.ttf */,
+				DAF44CE329A4661900A6F6F8 /* RobotoCondensed-Light.ttf */,
+				DAF44CE129A4661900A6F6F8 /* RobotoCondensed-LightItalic.ttf */,
+				DAF44CEF29A4661900A6F6F8 /* RobotoCondensed-Regular.ttf */,
+			);
+			path = Fontes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAF44CA329A43D6200A6F6F8 /* MyFinances */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAF44CCE29A43D6400A6F6F8 /* Build configuration list for PBXNativeTarget "MyFinances" */;
+			buildPhases = (
+				DAF44CA029A43D6200A6F6F8 /* Sources */,
+				DAF44CA129A43D6200A6F6F8 /* Frameworks */,
+				DAF44CA229A43D6200A6F6F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyFinances;
+			productName = MyFinances;
+			productReference = DAF44CA429A43D6200A6F6F8 /* MyFinances.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAF44CB929A43D6400A6F6F8 /* MyFinancesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAF44CD129A43D6400A6F6F8 /* Build configuration list for PBXNativeTarget "MyFinancesTests" */;
+			buildPhases = (
+				DAF44CB629A43D6400A6F6F8 /* Sources */,
+				DAF44CB729A43D6400A6F6F8 /* Frameworks */,
+				DAF44CB829A43D6400A6F6F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAF44CBC29A43D6400A6F6F8 /* PBXTargetDependency */,
+			);
+			name = MyFinancesTests;
+			productName = MyFinancesTests;
+			productReference = DAF44CBA29A43D6400A6F6F8 /* MyFinancesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DAF44CC329A43D6400A6F6F8 /* MyFinancesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAF44CD429A43D6400A6F6F8 /* Build configuration list for PBXNativeTarget "MyFinancesUITests" */;
+			buildPhases = (
+				DAF44CC029A43D6400A6F6F8 /* Sources */,
+				DAF44CC129A43D6400A6F6F8 /* Frameworks */,
+				DAF44CC229A43D6400A6F6F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAF44CC629A43D6400A6F6F8 /* PBXTargetDependency */,
+			);
+			name = MyFinancesUITests;
+			productName = MyFinancesUITests;
+			productReference = DAF44CC429A43D6400A6F6F8 /* MyFinancesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAF44C9C29A43D6200A6F6F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					DAF44CA329A43D6200A6F6F8 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					DAF44CB929A43D6400A6F6F8 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = DAF44CA329A43D6200A6F6F8;
+					};
+					DAF44CC329A43D6400A6F6F8 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = DAF44CA329A43D6200A6F6F8;
+					};
+				};
+			};
+			buildConfigurationList = DAF44C9F29A43D6200A6F6F8 /* Build configuration list for PBXProject "MyFinances" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAF44C9B29A43D6200A6F6F8;
+			productRefGroup = DAF44CA529A43D6200A6F6F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAF44CA329A43D6200A6F6F8 /* MyFinances */,
+				DAF44CB929A43D6400A6F6F8 /* MyFinancesTests */,
+				DAF44CC329A43D6400A6F6F8 /* MyFinancesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAF44CA229A43D6200A6F6F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF44CFD29A4661900A6F6F8 /* Roboto-BoldItalic.ttf in Resources */,
+				DAF44CFC29A4661900A6F6F8 /* Roboto-Medium.ttf in Resources */,
+				DAF44D0029A4661900A6F6F8 /* Roboto-Regular.ttf in Resources */,
+				DAF44CF629A4661900A6F6F8 /* Roboto-ThinItalic.ttf in Resources */,
+				DAF44CF929A4661900A6F6F8 /* Roboto-Bold.ttf in Resources */,
+				DAF44CB429A43D6400A6F6F8 /* LaunchScreen.storyboard in Resources */,
+				DAF44CF529A4661900A6F6F8 /* RobotoCondensed-Light.ttf in Resources */,
+				DAF44CFA29A4661900A6F6F8 /* Roboto-Light.ttf in Resources */,
+				DAF44CF429A4661900A6F6F8 /* RobotoCondensed-Italic.ttf in Resources */,
+				DAF44D0129A4661900A6F6F8 /* RobotoCondensed-Regular.ttf in Resources */,
+				DAF44CF129A4661900A6F6F8 /* RobotoCondensed-Bold.ttf in Resources */,
+				DAF44CFB29A4661900A6F6F8 /* Roboto-Italic.ttf in Resources */,
+				DAF44CF229A4661900A6F6F8 /* RobotoCondensed-BoldItalic.ttf in Resources */,
+				DAF44CF729A4661900A6F6F8 /* Roboto-BlackItalic.ttf in Resources */,
+				DAF44CB129A43D6400A6F6F8 /* Assets.xcassets in Resources */,
+				DAF44CF829A4661900A6F6F8 /* Roboto-Thin.ttf in Resources */,
+				DAF44CAF29A43D6200A6F6F8 /* Main.storyboard in Resources */,
+				DAF44CFF29A4661900A6F6F8 /* Roboto-LightItalic.ttf in Resources */,
+				DAF44CF329A4661900A6F6F8 /* RobotoCondensed-LightItalic.ttf in Resources */,
+				DAF44CFE29A4661900A6F6F8 /* Roboto-MediumItalic.ttf in Resources */,
+				DAF44CF029A4661900A6F6F8 /* Roboto-Black.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF44CB829A43D6400A6F6F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF44CC229A43D6400A6F6F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAF44CA029A43D6200A6F6F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DACCEAB329A6FBFC0092F1AB /* NewRecipeViewController.swift in Sources */,
+				DAF44CAC29A43D6200A6F6F8 /* ViewController.swift in Sources */,
+				DAD5105629A65DDF0094D7FE /* InitialFinanceCell.swift in Sources */,
+				DAC303D329A7E51300745B72 /* NewRecipeView.swift in Sources */,
+				DAF44CD929A43E2E00A6F6F8 /* InitialFinanceViewController.swift in Sources */,
+				DAC303DB29A7F59800745B72 /* ExtensionsUIText.swift in Sources */,
+				DAF44CA829A43D6200A6F6F8 /* AppDelegate.swift in Sources */,
+				DAF44CDC29A43EA100A6F6F8 /* InitialFinanceView.swift in Sources */,
+				DAF44CAA29A43D6200A6F6F8 /* SceneDelegate.swift in Sources */,
+				DAC303D829A7EE9F00745B72 /* NewExpenseView.swift in Sources */,
+				DAC303D629A7EB0400745B72 /* NewExpenseViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF44CB629A43D6400A6F6F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF44CBF29A43D6400A6F6F8 /* MyFinancesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF44CC029A43D6400A6F6F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF44CC929A43D6400A6F6F8 /* MyFinancesUITests.swift in Sources */,
+				DAF44CCB29A43D6400A6F6F8 /* MyFinancesUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAF44CBC29A43D6400A6F6F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAF44CA329A43D6200A6F6F8 /* MyFinances */;
+			targetProxy = DAF44CBB29A43D6400A6F6F8 /* PBXContainerItemProxy */;
+		};
+		DAF44CC629A43D6400A6F6F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAF44CA329A43D6200A6F6F8 /* MyFinances */;
+			targetProxy = DAF44CC529A43D6400A6F6F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DAF44CAD29A43D6200A6F6F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAF44CAE29A43D6200A6F6F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DAF44CB229A43D6400A6F6F8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAF44CB329A43D6400A6F6F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAF44CCC29A43D6400A6F6F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DAF44CCD29A43D6400A6F6F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAF44CCF29A43D6400A6F6F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyFinances/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = doug.MyFinances;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAF44CD029A43D6400A6F6F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyFinances/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = doug.MyFinances;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DAF44CD229A43D6400A6F6F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = doug.MyFinancesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyFinances.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyFinances";
+			};
+			name = Debug;
+		};
+		DAF44CD329A43D6400A6F6F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = doug.MyFinancesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyFinances.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyFinances";
+			};
+			name = Release;
+		};
+		DAF44CD529A43D6400A6F6F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = doug.MyFinancesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyFinances;
+			};
+			name = Debug;
+		};
+		DAF44CD629A43D6400A6F6F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = doug.MyFinancesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyFinances;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAF44C9F29A43D6200A6F6F8 /* Build configuration list for PBXProject "MyFinances" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF44CCC29A43D6400A6F6F8 /* Debug */,
+				DAF44CCD29A43D6400A6F6F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAF44CCE29A43D6400A6F6F8 /* Build configuration list for PBXNativeTarget "MyFinances" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF44CCF29A43D6400A6F6F8 /* Debug */,
+				DAF44CD029A43D6400A6F6F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAF44CD129A43D6400A6F6F8 /* Build configuration list for PBXNativeTarget "MyFinancesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF44CD229A43D6400A6F6F8 /* Debug */,
+				DAF44CD329A43D6400A6F6F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAF44CD429A43D6400A6F6F8 /* Build configuration list for PBXNativeTarget "MyFinancesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF44CD529A43D6400A6F6F8 /* Debug */,
+				DAF44CD629A43D6400A6F6F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAF44C9C29A43D6200A6F6F8 /* Project object */;
+}
